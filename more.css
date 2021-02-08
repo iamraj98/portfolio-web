@@ -1,0 +1,110 @@
+.about, .services, .skill, .team ,.contact,footer{
+	font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content, 
+.services .services-content,
+.skill .skill-content,
+.contact .contact-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+section .title{
+	text-align: center;
+	position: relative;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 180px;
+	height: 4px;
+	
+	transform:translateX(-50%);
+}
+
+section .title::after{
+	position: absolute;
+	bottom: -7px;
+	left: 50%;
+	padding: 5px;
+	font-size: 20px;
+	color: red;
+	background: white;
+	transform:translateX(-50%);
+}
+
+.about{
+	color: black;
+	background: url(about.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.about .title::after{
+	background: none;
+	content: "";
+}
+
+.about .about-content .left{
+	width: 45%;
+}
+
+.about .about-content .left img{
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 50%;
+
+}
+
+.about .about-content .right{
+	width: 55%;
+}
+
+.about .about-content .right .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+	color:#8677d3;
+}
+
+.about .about-content .right p{
+	text-align: justify;
+}
+
+.about .about-content .right a{
+	display: inline-block;
+	background: crimson;
+	color:white;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 10px 30px;	
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 2px solid  #0edad0;
+	transition: all 0.3s ease;
+	
+}
+
+.about .about-content .right a:hover{
+	color:black;
+	background: none;
+
+}
